@@ -1,0 +1,216 @@
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+#relevancesearch {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Ausrichtung der Kinder am unteren Rand des Containers */
+    padding: 10px; /* Optional: fügt Padding hinzu, um etwas Platz um den Container herum zu schaffen */
+}
+
+.left-side {
+    display: flex;
+    align-items: center; /* Align Items to the center vertically */
+}
+
+.left-side label {
+    margin-right: 10px; /* Abstand zwischen dem Label und dem Select-Menü */
+    max-height: 30px; /* Maximale Höhe des Labels */
+}
+
+.left-side select {
+    max-width: 100px;
+    max-height: 30px;
+}
+
+.right-side {
+    display: flex;
+    align-items: flex-start; /* Align Items to the top */
+}
+
+.right-side form {
+    display: flex;
+    align-items: center; /* Center items vertically within the form */
+}
+
+.right-side input[type="text"] {
+    max-width: 200px;
+    max-height: 30px;
+    margin-right: 10px; /* Abstand zwischen dem Suchfeld und dem Button */
+}
+
+.right-side input[type="submit"] {
+    max-height: 30px;
+}
+
+
+.products {
+    display: block;
+}
+
+.product {
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product img {
+    max-width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.produkt-details {
+    flex: 1;
+}
+
+.product h3 {
+    margin: 0 0 10px 0;
+}
+
+.produkt-tabelle {
+    width: 100%;
+    margin: 10px 0;
+    border-collapse: collapse;
+}
+
+.produkt-tabelle td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.produkt-info {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.produkt-info p {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: auto;
+}
+
+#form-feld {
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px; /* Fügt einen Abstand zwischen den Produkten hinzu */
+    border-radius: 5px;
+}
+
+.radio-group {
+    display: flex; /* Flexbox verwenden, um Elemente nebeneinander anzuzeigen */
+    align-items: center; /* Vertikale Zentrierung der Radio-Buttons und Labels */
+    gap: 15px; /* Abstand zwischen den Radio-Buttons */
+    margin-bottom: 20px; /* Abstand nach unten */
+}
+
+.radio-group label {
+    display: flex; /* Flexbox verwenden, um Radio-Button und Label nebeneinander anzuzeigen */
+    align-items: center; /* Vertikale Zentrierung */
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 8px; /* Abstand zwischen Radio-Button und Label-Text */
+}
+
+#feedback-form {
+    max-width: 800px; /* Breite anpassen, damit es auf der Seite gut aussieht */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white; /* Hintergrundfarbe für den Formularbereich */
+    border-radius: 5px; /* Runde Ecken für den Formularbereich */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Leichter Schatten für den Formularbereich */
+}
+
+hr {
+    border: none;       
+    height: 1px;           
+    background-color: #000;
+    margin: 20px 0;  
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: calc(100% - 20px); /* Breite der Eingabefelder anpassen */
+    padding: 8px;
+    box-sizing: border-box; /* Stellen Sie sicher, dass Padding in die Breite einfließt */
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: vertical; /* Ermöglicht vertikales Resize für Textareas */
+}
+
+button#subbutton {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: #18BD5B;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button#subbutton:hover {
+    background-color: #16a34a;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+

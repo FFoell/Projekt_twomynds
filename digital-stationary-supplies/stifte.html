@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stifte</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Unsere Stifte</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stifte.html">Stifte</a></li>
+                <li><a href="magazine.html">Magazine</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Verfügbare Stifte</h2>
+        <div id="relevancesearch">
+            <div class="left-side">
+                <label for="sort">Sortieren nach:</label>
+                <select id="sort" onchange="sortProducts()">
+                    <option value="relevance" selected>Relevanz</option>
+                    <option value="price-asc">Preis aufsteigend</option>
+                    <option value="price-desc">Preis absteigend</option>
+                </select>
+            </div>
+            <div class="right-side">
+                <form id="search" action="php/search.php" method="get">
+                    <input id="searchtext" type="text" name="q" placeholder="Suchbegriff eingeben" />
+                    <input type="submit" value="Suchen" />
+                </form>
+            </div>
+        </div>
+
+        <!-- Produkte-Container -->       
+        <div id="product-container" class="products">
+            <div class="product" data-price="2.99" data-relevance="5" data-product-id="1" data-product-name="FABER-CASTELL 1111 Bleistifte HB Schwarz, 12 Stück" data-item_number="1" data-category="Bleistifte" data-writing_color="Schwarz" data-availability="verfügbar" data-last-modified="2024-08-14T12:00:00" data-image-path="img/faber castell 12 Stück.jpeg">
+                <div class="image-container">
+                    <img src="img/faber castell 12 Stück.jpeg" alt="FABER-CASTELL 1111 Bleistifte">
+                </div>
+                <div class="produkt-details">
+                    <h3>FABER-CASTELL 1111 Bleistifte HB Schwarz, 12 Stück</h3>
+                    <table class="produkt-tabelle">
+                        <tr>
+                            <td>Artikelnummer</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Kategorie</td>
+                            <td>Bleistifte</td>
+                        </tr>
+                        <tr>
+                            <td>Schreibfarbe</td>
+                            <td>Schwarz</td>
+                        </tr>
+                        <tr>
+                            <td>Verfügbarkeit</td>
+                            <td>verfügbar</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="produkt-info">
+                    <p>Preis: 2,99 €</p>
+                    <button class="add-to-cart-button" data-product-id="1" onclick="addToCart('FABER-CASTELL 1111 Bleistifte HB Schwarz, 12 Stück')">In den Warenkorb</button>
+                </div>
+            </div>
+            <div class="product" data-price="1.18" data-relevance="4" data-product-id="2" data-product-name="FABER-CASTELL GRIP 2001 Bleistift HB Silber, 1 Stück" data-item_number="2" data-category="Bleistifte" data-writing_color="Schwarz" data-availability="verfügbar" data-last-modified="2024-08-14T12:00:00" data-image-path="img/FABER-CASTELL GRIP 2001 Bleistift HB Silber, 1 Stück.jpeg">
+                <div class="image-container">
+                    <img src="img/FABER-CASTELL GRIP 2001 Bleistift HB Silber, 1 Stück.jpeg" alt="FABER-CASTELL GRIP 2001 Bleistift">
+                </div>
+                <div class="produkt-details">
+                    <h3>FABER-CASTELL GRIP 2001 Bleistift HB Silber, 1 Stück</h3>
+                    <table class="produkt-tabelle">
+                        <tr>
+                            <td>Artikelnummer</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Kategorie</td>
+                            <td>Bleistift</td>
+                        </tr>
+                        <tr>
+                            <td>Schreibfarbe</td>
+                            <td>Schwarz</td>
+                        </tr>
+                        <tr>
+                            <td>Verfügbarkeit</td>
+                            <td>verfügbar</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="produkt-info">
+                    <p>Preis: 1,18 €</p>
+                    <button class="add-to-cart-button" data-product-id="2" onclick="addToCart('FABER-CASTELL GRIP 2001 Bleistift HB Silber, 1 Stück')">In den Warenkorb</button>
+                </div>
+            </div>
+            <div class="product" data-price="14.99" data-relevance="6" data-product-id="3" data-product-name="edding 3000 Permanentmarker Schwarz 1,5 - 3,0 mm, 10 Stück" data-item_number="3" data-category="Permanentmarker" data-writing_color="Schwarz" data-availability="ausverkauft" data-last-modified="2024-08-14T12:00:00" data-image-path="img/edding 3000 Permanentmarker Schwarz 1,5 - 3,0 mm, 10 Stück.jpeg">
+                <div class="image-container">
+                    <img src="img/edding 3000 Permanentmarker Schwarz 1,5 - 3,0 mm, 10 Stück.jpeg" alt="edding 3000 Permanentmarker Schwarz 1,5 - 3,0 mm, 10 Stück">
+                </div>
+                <div class="produkt-details">
+                    <h3>edding 3000 Permanentmarker Schwarz 1,5 - 3,0 mm, 10 Stück Rel6</h3>
+                    <table class="produkt-tabelle">
+                        <tr>
+                            <td>Artikelnummer</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Kategorie</td>
+                            <td>Permanentmarker</td>
+                        </tr>
+                        <tr>
+                            <td>Schreibfarbe</td>
+                            <td>Schwarz</td>
+                        </tr>
+                        <tr>
+                            <td>Verfügbarkeit</td>
+                            <td>ausverkauft</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="produkt-info">
+                    <p>Preis: 14,99 €</p>
+                    <button class="add-to-cart-button" data-product-id="3" onclick="addToCart('edding 3000 Permanentmarker Schwarz 1,5 - 3,0 mm, 10 Stück')">In den Warenkorb</button>
+                </div>
+            </div>
+            <div class="product" data-price="1.69" data-relevance="1" data-product-id="4" data-product-name="edding 3000 Permanentmarker Schwarz 1,5 - 3,0 mm, 1 Stück" data-item_number="4" data-category="Permanentmarker" data-writing_color="Schwarz" data-availability="verfügbar" data-last-modified="2024-08-14T12:00:00" data-image-path="img/edding 3000 Permanentmarker Schwarz 1,5 - 3,0 mm, 1 Stück.png">
+                <div class="image-container">
+                    <img src="img/edding 3000 Permanentmarker Schwarz 1,5 - 3,0 mm, 1 Stück.png" alt="edding 3000 Permanentmarker Schwarz 1,5 - 3,0 mm, 1 Stück">
+                </div>
+                <div class="produkt-details">
+                    <h3>edding 3000 Permanentmarker Schwarz 1,5 - 3,0 mm, 1 Stück Rel1</h3>
+                    <table class="produkt-tabelle">
+                        <tr>
+                            <td>Artikelnummer</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Kategorie</td>
+                            <td>Permanentmarker</td>
+                        </tr>
+                        <tr>
+                            <td>Schreibfarbe</td>
+                            <td>Schwarz</td>
+                        </tr>
+                        <tr>
+                            <td>Verfügbarkeit</td>
+                            <td>verfügbar</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="produkt-info">
+                    <p>Preis: 1,69 €</p>
+                    <button class="add-to-cart-button" data-product-id="4" onclick="addToCart('edding 3000 Permanentmarker Schwarz 1,5 - 3,0 mm, 1 Stück')">In den Warenkorb</button>
+                </div>
+            </div>
+            <div class="product" data-price="240.00" data-relevance="3" data-product-id="5" data-product-name="Montblanc, Meisterstück, Stifteetui für 2 Schreibgeräte, Schwarz" data-item_number="5" data-category="Hochwertige Stifte" data-writing_color="Schwarz" data-availability="verfügbar" data-last-modified="2024-08-14T12:00:00" data-image-path="img/Montblanc, Meisterstück, Stifteetui für 2 Schreibgeräte, Schwarz.jpeg">
+                <div class="image-container">
+                    <img src="img/Montblanc, Meisterstück, Stifteetui für 2 Schreibgeräte, Schwarz.jpeg" alt="Montblanc, Meisterstück, Stifteetui für 2 Schreibgeräte, Schwarz">
+                </div>
+                <div class="produkt-details">
+                    <h3>Montblanc, Meisterstück, Stifteetui für 2 Schreibgeräte, Schwarz Rel3</h3>
+                    <table class="produkt-tabelle">
+                        <tr>
+                            <td>Artikelnummer</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Kategorie</td>
+                            <td>Hochwertige Stifte</td>
+                        </tr>
+                        <tr>
+                            <td>Schreibfarbe</td>
+                            <td>Schwarz</td>
+                        </tr>
+                        <tr>
+                            <td>Verfügbarkeit</td>
+                            <td>verfügbar</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="produkt-info">
+                    <p>Preis: 240,00 €</p>
+                    <button class="add-to-cart-button" data-product-id="5" onclick="addToCart('Montblanc, Meisterstück, Stifteetui für 2 Schreibgeräte, Schwarz')">In den Warenkorb</button>
+                </div>
+            </div>
+            <div class="product" data-price="2822.00" data-relevance="7" data-product-id="6" data-product-name="Waldmann, Bleistift, Xetra Vienna, Diamond Lady, Lack Weiß, Handgravur, Roségold, Diamant" data-item_number="6" data-category="Hochwertige Stifte" data-writing_color="Schwarz" data-availability="verfügbar" data-last-modified="2024-08-14T12:00:00" data-image-path="img/Waldmann, Bleistift, Xetra Vienna, Diamond Lady, Lack Weiß, Handgravur, Roségold, Diamant.jpeg">
+                <div class="image-container">
+                    <img src="img/Waldmann, Bleistift, Xetra Vienna, Diamond Lady, Lack Weiß, Handgravur, Roségold, Diamant.jpeg" alt="Waldmann, Bleistift, Xetra Vienna, Diamond Lady, Lack Weiß, Handgravur, Roségold, Diamant">
+                </div>
+                <div class="produkt-details">
+                    <h3>Waldmann, Bleistift, Xetra Vienna, Diamond Lady, Lack Weiß, Handgravur, Roségold, Diamant Rel7</h3>
+                    <table class="produkt-tabelle">
+                        <tr>
+                            <td>Artikelnummer</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>Kategroie</td>
+                            <td>Hochwertige Stifte</td>
+                        </tr>
+                        <tr>
+                            <td>Schreibfarbe</td>
+                            <td>Schwarz</td>
+                        </tr>
+                        <tr>
+                            <td>Verfügbarkeit</td>
+                            <td>verfügbar</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="produkt-info">
+                    <p>Preis: 2.822,00 €</p>
+                    <button class="add-to-cart-button" data-product-id="6" onclick="addToCart('Waldmann, Bleistift, Xetra Vienna, Diamond Lady, Lack Weiß, Handgravur, Roségold, Diamant')">In den Warenkorb</button>
+                </div>
+            </div>
+            <div class="product" data-price="690.00" data-relevance="2" data-product-id="7" data-product-name="Graf von FABER-CASTELL, Bleistift, Magnum" data-item_number="7" data-category="Hochwertige Stifte" data-writing_color="Schwarz" data-availability="ausverkauft" data-last-modified="2024-08-14T12:00:00" data-image-path="img/Graf von FABER-CASTELL, Bleistift, Magnum.webp">
+                <div class="image-container">
+                    <img src="img/Graf von FABER-CASTELL, Bleistift, Magnum.webp" alt="Graf von FABER-CASTELL, Bleistift, Magnum">
+                </div>
+                <div class="produkt-details">
+                    <h3>Graf von FABER-CASTELL, Bleistift, Magnum Rel2</h3>
+                    <table class="produkt-tabelle">
+                        <tr>
+                            <td>Artikelnummer</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>Kategorie</td>
+                            <td>Hochwertige Stifte, Bleistift</td>
+                        </tr>
+                        <tr>
+                            <td>Schreibfarbe</td>
+                            <td>Schwarz</td>
+                        </tr>
+                        <tr>
+                            <td>Verfügbarkeit</td>
+                            <td>ausverkauft</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="produkt-info">
+                <p>Preis: 690,00 €</p>
+                <button class="add-to-cart-button" data-product-id="7" onclick="addToCart('Graf von FABER-CASTELL, Bleistift, Magnum')">In den Warenkorb</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Suchergebnisse-Container -->
+        <div id="search-results" class="products" style="display:none;">
+            <h2>Suchergebnisse:</h2>
+            <div id="results-list"></div>
+        </div> 
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Schreibwarengeschäft</p>
+    </footer>
+    <script src="js/productsort.js"></script>
+    <script src="js/indexProducts.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/cookies.js"></script>
+</body>
+</html>

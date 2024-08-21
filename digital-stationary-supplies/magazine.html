@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Unsere Magazine</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stifte.html">Stifte</a></li>
+                <li><a href="magazine.html">Magazine</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Verfügbare Magazine</h2>
+        <div class="products">
+            <div class="product">
+                <h3>Mode-Magazin</h3>
+                <p>Preis: 4,00 €</p>
+                <button onclick="addToCart('Mode-Magazin')">In den Warenkorb</button>
+            </div>
+            <div class="product">
+                <h3>Wissenschaftsmagazin</h3>
+                <p>Preis: 5,00 €</p>
+                <button onclick="addToCart('Wissenschaftsmagazin')">In den Warenkorb</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Digital Stationary Supplies</p>
+    </footer>
+    <script src="js/cookies.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Willkommen im Schreibwarengeschäft</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stifte.html">Stifte</a></li>
+                <li><a href="magazine.html">Magazine</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form id="feedback-form">
+        <div id="form-feld">
+            <h1>Feedback Formular</h1>
+            Wir würden uns freuen, Ihre Gedanken, Anliegen oder Probleme zu hören, damit wir uns verbessern können!
+            <hr>
+            <div id="Feedback-Art">
+                Art des Feedbacks
+            </div>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" id="kommentar" name="fav_language" value="KOMMENTAR">
+                    Kommentare
+                </label>
+                <label>
+                    <input type="radio" id="fehlermeldungen" name="fav_language" value="FEHLERMELDUNGEN">
+                    Fehlermeldungen
+                </label>
+                <label>
+                    <input type="radio" id="fragen" name="fav_language" value="FRAGEN">
+                    Fragen
+                </label>
+            </div>
+
+            <label for="feedback">Beschreiben Sie Ihr Feedback:</label>
+            <textarea id="feedback" rows="10" cols="100"></textarea>
+            
+            <label for="vorname">Vorname:</label>
+            <input type="text" class="vorname" name="vorname" size="30">
+
+            <label for="nachname">Nachname:</label>
+            <input type="text" class="nachname" name="nachname" size="30">
+
+            <label for="email" class="textemail">E-Mail:</label>
+            <input type="email" class="email" name="email" size="30" placeholder="beispiel@beispiel.de">
+            
+            <button id="subbutton" type="submit">Absenden</button>
+        </div>
+    </form>
+
+    <h2>Feedback</h2>
+    <div id="feedback-list"></div>
+
+        </div>
+    
+
+    <footer>
+        <p>&copy; 2024 Schreibwarengeschäft</p>
+    </footer>
+
+    <script src="js/fb.js"></script>
+    <script src="js/cookies.js"></script>
+</body>
+</html>
